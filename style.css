@@ -1,0 +1,198 @@
+/* #FFFFFF
+#0066FF
+#171717
+#3888FF
+#4D00FF */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+}
+body{
+    background-color: #2C2F33;
+}
+header{
+    display: flex;
+    background-color: #171717;
+    height: 70px;
+    align-items: center;
+    padding: 0 80px 0 125px;
+}
+.header-button{
+    border-radius: 10px;
+    background: linear-gradient(to right,#3888FF,#4D00FF );
+    border: none;
+    box-shadow: 0 0 14px #0066FF;
+    padding: 6px 25px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: auto;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+nav.header-nav ul li a{
+    padding: 4px 45px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    
+}
+nav.header-nav ul li a:hover{
+    color: wheat;
+}
+.header-logo h1{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.header-logo{
+    width: calc(50% - 125px);
+}
+.main-text{
+    width: 50%;
+    height: calc(100vh - 70px);
+    background-color: #171717;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-img{
+    width: 50%;
+    height: calc(100vh - 70px);  
+}
+main{
+    display: flex;
+}
+.main-text-info h2{
+    font-size: 72px;
+    font-weight: 700;   
+}
+.main-text-info h2::before{
+    content: '';
+    background-color:#0066FF;
+    width: 60px;
+    height: 10px;
+    display: block;
+}
+
+.main-text-info p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #D1D1D1;
+    margin: 40px 0;
+}
+.main-text-button{
+    background-color:#0066FF;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 17px 0;
+    border: 2px solid #0066FF;
+    padding: 17px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-property: color, background-color;
+    width: 100%;
+}
+.main-text-button:hover{
+    background-color: white;
+    color: #0066FF;
+}
+
+.main-text-scroll {
+
+    bottom: 50px;
+    position: absolute;
+    left: calc(50% - 44px);
+}
+
+.main-text-scroll button {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    background: none;
+    border: none;
+}
+
+.main-text-scroll button img {
+    display: block;
+    width: 16px;
+    margin: 0 auto;
+    margin-top: 20px;
+    filter: invert(.5);
+}
+.main-text-info{
+    width: 380px;
+    margin-bottom: 140px;
+}
+
+.main-img {
+    background-image: url('img/annas niebieski.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pop-up-bg{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 60%);
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-up {
+    width: 50%;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+}
+
+.pop-up-text span {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #000;
+    display: block;
+}
+
+.pop-up-text p {
+    font-size: 16px;
+    color: #555555;
+    line-height: 20px;
+}
+
+.pop-up-text {
+    width: 60%;
+    padding: 70px 85px;
+}
+
+.pop-up-img {
+    width: 40%;
+    background-image: url('img/esther-wilhelmsson-d6YBogLgbrc-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.show {
+    display: flex;
+    transition: 0.4s;
+}
